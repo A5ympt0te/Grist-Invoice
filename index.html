@@ -40,7 +40,7 @@
           <div class="top">
             <div class="block">
               <div class="header">
-                <div class="meta title">Invoice</div>
+                <div class="meta title">Rechnung</div>
               </div>
               <div class="info"><span class="meta">Invoice Number</span> #{{ invoice.Number }}</div>
               <div class="info" v-if="invoice.Issued"><div class="meta date-tag">Issued</div> {{ invoice.Issued | asDate }}</div>
@@ -115,9 +115,9 @@
               <tr>
                 <th>Description</th>
                  <th>Kurztext</th>
-                <th class="money">Unit Price</th>
-                <th class="number">Quantity</th>
-                <th class="money">Total</th>
+                <th class="money">EP</th>
+                <th class="number">Menge</th>
+                <th class="money">GB</th>
               </tr>
               <tr v-for="item in invoice.Items">
                 <td>{{ item.Description }}</td>

@@ -74,10 +74,11 @@ table.items {
 
 table.items th {
   text-align: left;
-  color: white;
+  color: black;
   text-transform: uppercase;
   font-weight: normal;
   padding: 4px;
+  border-bottom: 1px solid black;
 }
 
 table.items td {

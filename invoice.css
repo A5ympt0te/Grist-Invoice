@@ -68,7 +68,7 @@ a {
 
 table.items {
   width: 100%;
-  border: 0px solid #ff8000;
+  border: 0px none #ff8000;
   border-collapse: collapse;
 }
 

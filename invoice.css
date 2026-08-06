@@ -78,7 +78,6 @@ table.items th {
   text-transform: uppercase;
   font-weight: normal;
   padding: 4px;
-  border-bottom: 1px solid black;
 }
 
 table.items td {

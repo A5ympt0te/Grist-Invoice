@@ -113,18 +113,28 @@
             </template>
             <template v-else>
               <tr>
-                <th>Description</th>
-                 <th>Kurztext</th>
-                <th class="money">EP</th>
-                <th class="number">Menge</th>
-                <th class="money">GB</th>
+                <th style="width: 5%;text-align: left">Pos.</th>
+                <th style="width: 5%;text-align: right">Anzahl</th>
+                <th style="width: 5%;text-align: left">ME</th>
+                <th style="width: 40%;text-align: left">Beschreibung </th>
+                <th style="width: 10%;text-align: right">EP €</th>
+                <th style="width: 15%;text-align: right">GB</th>
+              </tr>
+              <tr  v-for="item in invoice.Items">
+                <td style="width: 5%;text-align: left">{{item.Position}}</td>
+                <td style="width: 5%;text-align: right">{{item.Anzahl}}</td>
+                <td style="width: 5%;" >{{item.ME}}</td>
+                <td style="width: 40%;text-align: left">{{item.Kurztext}}</td>
+                <td style="width: 10%;text-align: right">{{item.EP}}</td>
+                <td style="width: 15%;text-align: right">{{item.GB}}</td>
               </tr>
               <tr v-for="item in invoice.Items">
-                <td>{{ item.Description }}</td>
-                <td>{{ item.Kurztext }}</td>
-                <td class="money">{{ item.Price | currency }}</td>
-                <td class="number">{{ item.Quantity }}</td>
-                <td class="money">{{ item.Total | currency }}</td>
+                <td></td>
+                <td ></td>
+                <td ></td>
+                <td>{{item.Langtext}}</td>
+                <td></td>
+                <td></td>
               </tr>
             </template>
           </table>

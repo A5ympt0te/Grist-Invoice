@@ -80,6 +80,9 @@ table.items th {
   padding: 4px;
   border-bottom-style: solid;
   border-bottom-width: 2px;
+  position: sticky;
+  top: 0; /* Hält die Überschrift oben beim Scrollen */
+ z-index: 10; /* Stellt sicher, dass die Überschrift über den Inhalten bleibt */
 }
 
 table.items td {

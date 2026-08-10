@@ -85,6 +85,7 @@ table.items th {
 table.items td {
   background-color: white;
   padding: 4px;
+  font-size: 80%
 }
 
 .client .title, .summary .title, table.items th, .help .title {
@@ -135,7 +136,6 @@ div.summary .part {
 div.summary .total {
   display: block;
   flex-grow: 1;
-  background: #000080;
   font-size: 140%;
 }
 

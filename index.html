@@ -120,7 +120,8 @@
                 <th style="width: 10%;text-align: right">EP €</th>
                 <th style="width: 15%;text-align: right">GB</th>
               </tr>
-              <tr  v-for="item in invoice.Items">
+             <template v-for="item in invoice.Items" :key="item.Position">              
+              <tr>
                 <td style="width: 5%;text-align: left">{{item.Position}}</td>
                 <td style="width: 5%;text-align: right">{{item.Anzahl}}</td>
                 <td style="width: 5%;" >{{item.ME}}</td>
@@ -128,7 +129,7 @@
                 <td style="width: 10%;text-align: right">{{item.EP}}</td>
                 <td style="width: 15%;text-align: right">{{item.GB}}</td>
               </tr>
-              <tr v-for="item in invoice.Items">
+               <tr>
                 <td></td>
                 <td ></td>
                 <td ></td>
@@ -136,6 +137,7 @@
                 <td></td>
                 <td></td>
               </tr>
+    		    </template>     
             </template>
           </table>
 

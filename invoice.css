@@ -47,7 +47,7 @@ a {
 }
 
 .client, .items, .summary {
-  padding: 1px;
+  padding: 20%;
   margin-top: 1em;
   margin-bottom: 1em;
   background: #FFFFFF;

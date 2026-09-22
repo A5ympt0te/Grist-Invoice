@@ -75,12 +75,13 @@ table.items {
 table.items th {
   text-align: left;
   color: black;
+  background-color: white;
   font-variant-caps: small-caps;
   font-weight: normal;
   padding: 40%;
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  position: fixed;
+  position: sticky;
   top: 0; /* Hält die Überschrift oben beim Scrollen */
  z-index: 10; /* Stellt sicher, dass die Überschrift über den Inhalten bleibt */
 }
